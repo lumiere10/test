@@ -1,0 +1,11 @@
+@function adaptiveFonts($min, $max){
+  @return calc(($min * 1px) + ($max - $min) * ((100vw - 320px) / (1920 - 320)));
+}
+
+@function vw($value, $size: 1920) {
+  @return $value * calc(100/ $size)* 1vw;
+}
+
+@function mobVw($value, $size: 320) {
+  @return $value * calc(100/ $size)* 1vw;
+}

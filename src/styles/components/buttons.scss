@@ -1,0 +1,30 @@
+@import "../colors";
+@import "../variable";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: $WHITE;
+  text-transform: uppercase;
+  border: none;
+  background: $ORANGE;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color $transition ;
+  &:hover {
+    background: $LITE_ORANGE;
+  }
+  &_green {
+    background-color: $GREEN;
+    &:hover {
+      background-color: $LITE_GREEN;
+    }
+  }
+
+  &__icon{
+    margin-left: 18px;
+  }
+}

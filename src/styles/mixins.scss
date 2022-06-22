@@ -9,3 +9,7 @@
 @function mobVw($value, $size: 320) {
   @return $value * calc(100/ $size)* 1vw;
 }
+
+@function mobRem($value, $size: 480) {
+  @return ($value / 16) + rem;
+}

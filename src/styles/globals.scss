@@ -5,24 +5,33 @@
 }
 html {
   min-height: 100%;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 }
 body {
   height: 100%;
 }
 
 body {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
   display: flex;
   flex-direction: column;
   height: 100%;
   min-height: 100vh;
   &.show{
     overflow: hidden;
+    .main-container{
+      display: none;
+    }
   }
-}
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+  }
 
 .main {
   width: 100vw;
@@ -33,9 +42,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  @media (max-width: 320px){
-    background-image: url(../img/bg1.jpg);
-    background: #EDF2F5;
+  @media (max-width: 768px){
+    background-image: url(../img/bg1.png);
+    background-color: #EDF2F5;
   }
 }
 
@@ -70,14 +79,14 @@ body {
 
 .on-mob{
   display: none;
-  @media(max-width: 480px){
+  @media(max-width: 768px){
     display: block;
   }
 }
 
 .not-mob{
   display: block;
-  @media(max-width: 480px){
+  @media(max-width: 768px){
     display: none;
   }
 }

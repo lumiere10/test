@@ -12,7 +12,7 @@
     justify-content: space-between;
   }
   &__info.not-mob{
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
@@ -22,6 +22,9 @@
       max-height: 148px;
     display: block;
     @media (max-width: 480px) {
+      width: mobRem(70);
+    }
+    @media (max-width: 320px) {
       width: mobVw(75);
     }
     &-img{
@@ -38,6 +41,25 @@
 .header__info-box {
   font-size: 12px;
   line-height: 20px;
+  @media (max-width: 1920px) {
+    font-size: adaptiveFonts(9,12);
+  }
+  @media (max-width: 990px) {
+    font-size: adaptiveFonts(8,10);
+    line-height: 1.2;
+  }
+  @media (max-width: 990px) {
+    font-size: adaptiveFonts(8,10);
+    line-height: 1.2;
+  }
+  @media (max-width: 768px) {
+  font-size: adaptiveFonts(12,18);
+  line-height: 1.2;
+}
+  @media (max-width: 320px) {
+    font-size: adaptiveFonts(8,10);
+    line-height: 1.2;
+  }
   &.price-catalog {
     display: flex;
     .info-box__text {
@@ -46,8 +68,18 @@
       border-bottom-width: medium;
       cursor: pointer;
       max-width: max-content;
+      @media (max-width: 1920px) {
+        font-size: adaptiveFonts(9,12);
+      }
+      @media (max-width: 990px) {
+        font-size: adaptiveFonts(9,10);
+      }
+
+      @media (max-width: 768px) {
+        font-size: adaptiveFonts(9,18);
+      }
     }
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
     justify-content: center;
   }
   }
@@ -83,17 +115,12 @@
 .menu__list-item {
   text-transform: uppercase;
   font-weight: 500;
-  @media (max-width: 480px) {
-    font-size: adaptiveFonts(10, 14);
-    line-height: 1.2;
+  &:not(:last-child) {
+    @media (max-width: 768px) {
+      margin-bottom: mobVw(20);
+    }
   }
-  &:not(:last-child){
-  @media (max-width: 480px) {
-    margin-bottom: mobVw(20);
-  }
-  }
-
-  &:hover{
+  &:not(:first-child):hover{
   a {
     color: $ORANGE;
     &:after{
@@ -108,12 +135,29 @@
     }
   }
 }
-  a{transition: .6s;}
+
+  a{transition: .6s;
+    @media (max-width: 1920px) {
+      font-size: adaptiveFonts(9, 14);
+      line-height: 1.2;
+    }
+    @media (max-width: 768px) {
+      font-size: adaptiveFonts(12, 18);
+      line-height: 1.2;
+    }
+    @media (max-width: 480px) {
+      font-size: adaptiveFonts(10, 14);
+      line-height: 1.2;
+    }
+  }
 }
 .info-box__status-wrap {
-  margin-bottom: 16px;
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    margin-bottom:  mobVw(16);
+
+  }
   & .bold {
     margin-left: 5px;
   }
@@ -131,12 +175,17 @@
 
 .info-box__contacts {
   .info-box__text {
-      margin-bottom: 15px;
+      margin-bottom: vw(15);
     @media (max-width: 1920px) {
-      font-size: adaptiveFonts(7, 12);
+      font-size: adaptiveFonts(6, 12);
     }
     @media (max-width: 320px) {
+
       margin-bottom: mobVw(5);
+    }
+    @media (max-width: 768px) {
+      margin-top: 10px;
+      margin-bottom: mobRem(5);
     }
   }
   &-link {
@@ -152,8 +201,17 @@
       letter-spacing:0;
       line-height: 1.2;
     }
+    @media (max-width: 990px) {
+      font-size: adaptiveFonts(12, 18);
+      text-align: center;
+      letter-spacing:0;
+      line-height: 1.2;
+    }
     @media (max-width: 320px) {
       margin-bottom: mobVw(5);
+    }
+    @media (max-width: 480px) {
+      margin-bottom: mobRem(5);
     }
   }
   &-btn {
@@ -177,6 +235,17 @@
       animation: swing 1.2s ease;
     }
   }
+  &-item a{
+    width: vw(45);
+    display: block;
+    @media (max-width: 768px) {
+      width: mobVw(43);
+    }
+svg{
+  width: 100%;
+}
+
+  }
 }
 
 
@@ -184,6 +253,7 @@
 .header__info-wrapper{
   display: flex;
   grid-gap: 22px;
+  justify-content: space-between;
 button {
   svg {
     width: mobVw(20);
@@ -225,10 +295,16 @@ button {
     }
     }
   }
+  @media (max-width: 320px) {
+    width: mobVw(137);
+  }
+  @media (max-width: 480px) {
+  }
 }
 }
 .header__info-mob-menu{
   margin-top: mobVw(20);
+
     .menu__list{
       flex-direction: column;
     }
@@ -246,6 +322,7 @@ button {
     position: relative;
     transition: .6s;
     right: auto;
+    background-color: #EDF2F5;
   }
   .header__info-box{
     margin-top: mobVw(30);

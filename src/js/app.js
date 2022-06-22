@@ -34,7 +34,14 @@ const blocksWrapp = document.querySelector(".benefits");
 const blockAfter = document.querySelector(".benefits__item:not(.not-mob)");
 btnClose.style.opacity = "0";
 blockAfter.classList.add('hideAfter')
+btnClose.style.visibility = "hidden";
 
+btnOpen.style.opacity = "1";
+btnOpen.style.visibility = "visible";
+blocks.forEach(function(item) {
+	item.classList.remove('show')
+})
+blockAfter.classList.add('hideAfter')
 btnOpen.addEventListener('click', function() {
 	this.style.opacity = "0";
 	this.style.visibility = "hidden";

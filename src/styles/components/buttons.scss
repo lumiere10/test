@@ -1,6 +1,9 @@
 @import "../colors";
 @import "../variable";
 
+button{
+  cursor: pointer;
+}
 .btn {
   display: flex;
   justify-content: center;

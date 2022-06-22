@@ -1,12 +1,20 @@
 @import "../colors";
 
-.checkbox {
+.feedback__checkbox.checkbox {
   display: flex;
   position: relative;
   cursor: pointer;
   align-items: center;
-  p {
+  p {  font-weight: 500;
+    font-size: 12px;
+    margin-top: 19px;
     margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    a{
+      color: $ORANGE;
+    }
   }
   input {
     position: absolute;
@@ -26,7 +34,6 @@
 
 .checkmark {
   position: absolute;
-  top: calc(50% - 9px);
   left: 0;
   height: 18px;
   width: 18px;

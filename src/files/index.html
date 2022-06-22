@@ -11,19 +11,41 @@
 <body>
 //= '../html/examples/modal.html'
 <main class="main">
+    //= '../html/header.html'
     <div class="container">
         <div class="content">
             <div class="benefits">
+
                 <div class="benefits__item">
                     <p class="ta-center"><span class="bold">Гарантия от 50 лет</span> на материалы и 5
                         лет на монтаж</p>
-                    <svg class="on-mob" id="btn-open" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_i_1_4151)">
+                    <button id="btn-open" class="on-mob">
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_i_1_4151)">
+                                <rect width="33" height="33" rx="16.5" fill="#F38120"/>
+                            </g>
+                            <path d="M20.7518 17.4177H17.2472V20.8827H15.1286V17.4177H11.624V15.4377H15.1286V11.9727H17.2472V15.4377H20.7518V17.4177Z" fill="white"/>
+                            <defs>
+                                <filter id="filter0_i_1_4151" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                    <feOffset/>
+                                    <feGaussianBlur stdDeviation="11"/>
+                                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+                                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_4151"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button id="btn-close" class="on-mob"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_i_1_4308)">
                             <rect width="33" height="33" rx="16.5" fill="#F38120"/>
                         </g>
-                        <path d="M20.7518 17.4177H17.2472V20.8827H15.1286V17.4177H11.624V15.4377H15.1286V11.9727H17.2472V15.4377H20.7518V17.4177Z" fill="white"/>
+                        <path d="M18.4086 16.9991L22.7045 12.7127C22.8926 12.5245 22.9983 12.2693 22.9983 12.0033C22.9983 11.7372 22.8926 11.482 22.7045 11.2938C22.5164 11.1057 22.2612 11 21.9952 11C21.7291 11 21.474 11.1057 21.2859 11.2938L17 15.5903L12.7141 11.2938C12.526 11.1057 12.2709 11 12.0048 11C11.7388 11 11.4836 11.1057 11.2955 11.2938C11.1074 11.482 11.0017 11.7372 11.0017 12.0033C11.0017 12.2693 11.1074 12.5245 11.2955 12.7127L15.5914 16.9991L11.2955 21.2856C11.2019 21.3785 11.1276 21.489 11.0768 21.6108C11.0261 21.7325 11 21.8631 11 21.995C11 22.1269 11.0261 22.2575 11.0768 22.3793C11.1276 22.501 11.2019 22.6116 11.2955 22.7044C11.3884 22.7981 11.4989 22.8724 11.6206 22.9232C11.7424 22.9739 11.8729 23 12.0048 23C12.1367 23 12.2673 22.9739 12.389 22.9232C12.5108 22.8724 12.6213 22.7981 12.7141 22.7044L17 18.408L21.2859 22.7044C21.3787 22.7981 21.4892 22.8724 21.611 22.9232C21.7327 22.9739 21.8633 23 21.9952 23C22.1271 23 22.2576 22.9739 22.3794 22.9232C22.5011 22.8724 22.6116 22.7981 22.7045 22.7044C22.7981 22.6116 22.8724 22.501 22.9232 22.3793C22.9739 22.2575 23 22.1269 23 21.995C23 21.8631 22.9739 21.7325 22.9232 21.6108C22.8724 21.489 22.7981 21.3785 22.7045 21.2856L18.4086 16.9991Z" fill="white"/>
                         <defs>
-                            <filter id="filter0_i_1_4151" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter id="filter0_i_1_4308" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
@@ -31,53 +53,34 @@
                                 <feGaussianBlur stdDeviation="11"/>
                                 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
                                 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_4151"/>
+                                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_4308"/>
                             </filter>
                         </defs>
-                    </svg>
-                    <svg class="on-mob" id="btn-close"  width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g filter="url(#filter0_i_1_4308)">
-                        <rect width="33" height="33" rx="16.5" fill="#F38120"/>
-                    </g>
-                    <path d="M18.4086 16.9991L22.7045 12.7127C22.8926 12.5245 22.9983 12.2693 22.9983 12.0033C22.9983 11.7372 22.8926 11.482 22.7045 11.2938C22.5164 11.1057 22.2612 11 21.9952 11C21.7291 11 21.474 11.1057 21.2859 11.2938L17 15.5903L12.7141 11.2938C12.526 11.1057 12.2709 11 12.0048 11C11.7388 11 11.4836 11.1057 11.2955 11.2938C11.1074 11.482 11.0017 11.7372 11.0017 12.0033C11.0017 12.2693 11.1074 12.5245 11.2955 12.7127L15.5914 16.9991L11.2955 21.2856C11.2019 21.3785 11.1276 21.489 11.0768 21.6108C11.0261 21.7325 11 21.8631 11 21.995C11 22.1269 11.0261 22.2575 11.0768 22.3793C11.1276 22.501 11.2019 22.6116 11.2955 22.7044C11.3884 22.7981 11.4989 22.8724 11.6206 22.9232C11.7424 22.9739 11.8729 23 12.0048 23C12.1367 23 12.2673 22.9739 12.389 22.9232C12.5108 22.8724 12.6213 22.7981 12.7141 22.7044L17 18.408L21.2859 22.7044C21.3787 22.7981 21.4892 22.8724 21.611 22.9232C21.7327 22.9739 21.8633 23 21.9952 23C22.1271 23 22.2576 22.9739 22.3794 22.9232C22.5011 22.8724 22.6116 22.7981 22.7045 22.7044C22.7981 22.6116 22.8724 22.501 22.9232 22.3793C22.9739 22.2575 23 22.1269 23 21.995C23 21.8631 22.9739 21.7325 22.9232 21.6108C22.8724 21.489 22.7981 21.3785 22.7045 21.2856L18.4086 16.9991Z" fill="white"/>
-                    <defs>
-                        <filter id="filter0_i_1_4308" x="0" y="0" width="33" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                            <feOffset/>
-                            <feGaussianBlur stdDeviation="11"/>
-                            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
-                            <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_4308"/>
-                        </filter>
-                    </defs>
-                </svg>
+                    </svg></button>
+                </div>
+                <div class="benefits__item not-mob">
+                    <p class="ta-center"><span class="bold">Замер, монтажный проект</span> и<br class="not-mob"/> еще 4 услуги бесплатно </p>
+                </div>
+                <div class="benefits__item not-mob">
+                    <p class="ta-center"><span class="bold">Сметы<br class="not-mob"/> точны</span> до копейки </p>
+                </div>
 
-                </div>
-                <div class="benefits__item not-mob">
-                    <p class="ta-center"><span class="bold">Замер, монтажный проект</span> и</br> еще 4 услуги бесплатно </p>
-                </div>
-                <div class="benefits__item not-mob">
-                    <p class="ta-center"><span class="bold">Сметы</br> точны</span> до копейки </p>
-                </div>
                 <div class="benefits__item not-mob">
                     <p class="ta-center"><span class="bold">Поэтапная оплата,</span> кредит или рассрочка </p>
                 </div>
                 <div class="benefits__item not-mob">
-                    <p class="ta-center"><span class="bold">Наши крыши в каждом поселке</span></br> и дачном сообществе региона </p>
+                    <p class="ta-center"><span class="bold">Наши крыши в каждом поселке</span><br class="not-mob"/> и дачном сообществе региона </p>
                 </div>
             </div>
             <div class="offer">
-                <h1 class="h1">Продажа <span class="semi-bold">кровельных материалов</span> в Тюмени </br> и Тюменской области </h1>
+                <h1 class="h1">Продажа <span class="semi-bold">кровельных материалов</span> в Тюмени <br class="not-mob"/> и <br class="on-mob" /> Тюменской области </h1>
                 <div class="subtitle">
                     <svg width="58" height="10" viewBox="0 0 58 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.75" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-width="1.5"/>
-                    <rect x="17.0117" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.75" stroke-width="1.5"/>
-                    <rect x="33.2734" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.5" stroke-width="1.5"/>
-                    <rect x="49.535" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.25" stroke-width="1.5"/>
-                </svg>
-
+                        <rect x="0.75" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-width="1.5"/>
+                        <rect x="17.0117" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.75" stroke-width="1.5"/>
+                        <rect x="33.2734" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.5" stroke-width="1.5"/>
+                        <rect x="49.535" y="0.75" width="7.71495" height="7.71495" rx="3.85748" stroke="#12C868" stroke-opacity="0.25" stroke-width="1.5"/>
+                    </svg>
                     <h2 class="h2">и монтаж под ключ</h2>
                 </div>
                 <div class="btns">
@@ -88,14 +91,14 @@
                             <path d="M20.0244 9.45652H17.307V2.71739H10.5679V0H20.0244V9.45652Z" fill="white"/>
                         </svg>
                     </button>
-                    <button id="myBtn" class="btns__item btn thin tt-upper">
+                    <button class="btns__item btn thin tt-upper">
                         записаться на просмотр объектов
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.6775 0.366446L0 18.0439L1.92147 19.9654L19.599 2.28791L17.6775 0.366446Z" fill="white"/>
                             <path d="M20.0244 9.45652H17.307V2.71739H10.5679V0H20.0244V9.45652Z" fill="white"/>
                         </svg>
-
                     </button>
+
                 </div>
                 <div class="helpText">
                     <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,8 +112,10 @@
         </div>
     </div>
 </main>
-
 </body>
+<!-- jQuery base library needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
 
 <script type="text/javascript" src="js/app.min.js"></script>
 </html>
